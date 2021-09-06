@@ -1,0 +1,113 @@
+<head>
+
+    <title>Game</title>
+
+    <script type="text/javascript" src="gamescript.js"></script>
+    <link href="gamestyle.css" rel="stylesheet">
+
+</head>
+
+<meta charset="utf-8">
+
+<body bgcolor=Honeydew onmousemove = "Coordinate(event)" onmousedown = "Building(event)" onkeydown = "KeyControl(event)" style=" cursor: url('Cursor.png'), default;">
+    
+    <div onmousemove = "setDebug(event)" id="background" style="border: 3px solid #FFFAFA;">
+        <img src="Background.png" alt="none">
+    </div>
+
+    <div class="imageButton" id="controlPanel">
+        <img src="controlPanel.png" alt="none" onmousedown = "TypeBuild('controlPanel')" style="cursor: url('CursorPointer.png'), pointer;">
+        <div class="imageText" id="count1">0</div>
+    </div>
+    <div class="imageButton" id="verticalWire">
+        <img src="topWireVertical.png" alt="none" onmousedown = "TypeBuild('verticalWire')" style="cursor: url('CursorPointer.png'), pointer;">
+    </div>
+    <div class="imageButton" id="Relay">
+        <img src="Relay.png" alt="none" onmousedown = "TypeBuild('Relay')" style="cursor: url('CursorPointer.png'), pointer;">
+        <div class="imageText" id="count4">0</div>
+    </div>
+    <div class="imageButton" id="Power">
+        <img src="Power.png" alt="none" onmousedown = "TypeBuild('Power')" style="cursor: url('CursorPointer.png'), pointer;">
+        <div class="imageText" id="count5">0</div>
+    </div>
+    <div class="imageButton" id="Xor">
+        <img src="Xor.png" alt="none" onmousedown = "TypeBuild('Xor')" style="cursor: url('CursorPointer.png'), pointer;">
+    </div>
+    <div class="imageButton" id="Or">
+        <img src="Or.png" alt="none" onmousedown = "TypeBuild('Or')" style="cursor: url('CursorPointer.png'), pointer;">
+    </div>
+    <div class="imageButton" id="And">
+        <img src="And.png" alt="none" onmousedown = "TypeBuild('And')" style="cursor: url('CursorPointer.png'), pointer;">
+    </div>
+    <div class="imageButton" id="Not">
+        <img src="Not.png" alt="none" onmousedown = "TypeBuild('Not')" style="cursor: url('CursorPointer.png'), pointer;">
+    </div>
+    <div id="start" onmousedown = "Start()" >
+        <img src="Start.png" alt="none" style="cursor: url('CursorPointer.png'), pointer;">
+    </div>
+    <div>
+        <img src="TestingOff.png" alt="none" id="status">
+    </div>
+    <div id="Question">
+        <font size="4" face="Verdana" color="#006400">
+            <strong>Задача:</strong><br>
+            В помещении имеется 3 датчика освещённости.<br>
+            Свет должен загораться, если хотя бы на одном<br>
+            из датчиков станет темно.
+        </font>    
+    </div>
+    <div>
+        <img src="FastBuildingInfo.png" alt="none" id="FastBuildingInfo">
+    </div>
+    <div onmousedown = "Answer()" style="cursor: url('CursorPointer.png'), pointer;">
+        <img src="Answer.png" alt="none" id="Answer">
+    </div>
+    <div id="GoAway">
+            <a style="cursor: url('CursorPointer.png'), pointer;" href="Informatics"><font size="6" face="Verdana" color="#006400">На главную</font></a>
+    </div>
+    <div id="HowPlay">
+        <font size="4" face="Verdana" color="#006400">
+            <strong>Как играть:</strong><br>
+            Вам необходимо собрать логическую схему из представл-<br>
+            енных внизу блоков. Перед вами расположено поле<br>
+            размером 20 на 20 ячеек.<br><br>
+            <img src="controlPanel.png" align="left" vspace="7" alt="none"> Данный блок является датчиком, его можно<br> 
+            настроить, если нажать на него левой кнопкой<br> мыши. Свет - TRUE, темнота - FALSE. Утечка - TRUE,<br>нет утечки - FALSE. (кол-во ограничено) <br><br>
+            <img src="Relay.png" align="left" vspace="7" alt="none"> А это реле. Оно замыкает и размыкает контакты.<br>
+            Слева разположен вход питания, сверху выход,<br> 
+            снизу логический вход. Если сигнал TRUE,<br> 
+            контакты размыкаются. (кол-во ограничено) <br><br>
+            <img src="Power.png" align="left" vspace="7" alt="none"> Источник питания генерирует электричество.<br> 
+            Без него схема не имеет смысла. Внимание! Не<br>
+            путайте сигналы TRUE и FALSE и питание, - это разные вещи. (кол-во ограничено) <br><br>
+            <img src="And.png" align="left" vspace="7" alt="none"> Это один из логических элементов. Каждый из них <br>
+            принимает и выдаёт сигналы TRUE, FALSE.<br>
+            Элементы Or, Xor и And имеют два входа, слева и<br>
+            справа, и один выход сверху. Not - один вход снизу. <br><br>
+            <img src="topWireVertical.png" align="left" vspace="7" alt="none"> Все блоки на поле соединяются проводами. <br> 
+            Внимание! Питание может заменить сигнал<br>
+            TRUE, но сами сигналы не могут быть питанием.<br>
+            Обратите внимание на перекрестия проводов. <br><br>
+            Вы можете проверить своё решение, нажав на соответств-<br>
+            ующую кнопку, которая покажет один из верных<br>
+            вариантов. Помните, что правильных решений может быть<br>
+            бесконечное множество. Желаем Вам успеха!
+
+
+        </font>    
+    </div>
+
+    <div id="Hello" onmousedown="HelloClose(event)">
+        <img src="HelloPlate.png" alt="none" id="Plate">
+        <font size="4" face="Verdana" color="#006400" id="HelloText">
+        Приветствуем Вас в нашей увлекательной игре,<br>направленной на развитие логического мышления.<Br>
+        Вы можете ознакомиться с правилами игры,<br>заглянув в раздел: Как играть. Вперёд, приступайте к изучению!       
+        </font>    
+    </div>
+    
+
+    <script>
+        SetStart();
+    </script>
+
+</body>

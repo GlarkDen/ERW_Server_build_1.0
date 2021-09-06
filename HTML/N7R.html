@@ -1,0 +1,59 @@
+<html>
+<head>
+<title id="name">MGV ЕГЕ Упражнения Задание 7</title>
+<link rel="icon" href="img/logo1.png">
+<script type="text/javascript" src="random7.js"></script>
+<script type="text/javascript" src="base.js"></script>
+<style>
+.circle {
+    width: 120px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 255, 255);
+    font-size: 30px;
+    color: rgb(4, 1, 22);
+    line-height: 85px;
+    text-align: center;
+    background: rgb(135, 214, 44)
+}
+</style>
+</head>
+<body bgcolor=Honeydew link=Black alink=Orange vlink=Black>
+<table bgcolor=LimeGreen cellpadding=2 width="100%">
+<tr align=left bgcolor=LimeGreen valign=center>
+<td width=7%><img src="img/logo.png" hspace=30 height=120 width=180></td>
+<td width=60%><a href="Informatics"><H2>Информатика</H2></a></td>
+<td width=5%>
+    <div id="login" class="circle">Login</div>  
+</td>
+<td width=5% valign="Top">
+    <br><input id="out" type="button" value="Выход" onclick="OutClick()">
+    <br><br><input id="prof" type="button" value="Профиль" onclick="Profile()">
+</td>
+<td width=10% id="input"><input placeholder="Логин" id="Loginin" type="text" size="20">
+    <br>
+    <input placeholder="Пароль" id="Passwordin" type="password" size="20">
+    <br>
+    <input id="1" type="button" value="Вход" onclick="SendClick()"></td>
+<td width=5%><a href="Registration">Регистрация</a>
+<td width=8%><a href="Top">Топ</a></td>
+</tr>
+</table>
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p><input type="button" value="Сгенерировать" onclick="Generate(1)"> Задание 7</p></div>
+    <div style='margin-left:60px;'><p>Производится четырёхканальная (квадро) звукозапись с частотой дискретизации <span id="1A">A</span> кГц и <span id="1B">B</span>-битным разрешением. Запись длится <span id="1C">C</span> минут(ы), её результаты записываются в файл, сжатие данных не производится. Определите приблизительно размер полученного файла (в Мбайт). В качестве ответа укажите ближайшее к размеру файла целое число, кратное 10.</p></div>
+</font>
+<div style='margin-left:40px;'><input id="1p" type="text" size="30">&nbsp<input type="button" value="Ответить" onclick="CheckAnswer(1)">&nbsp<input type="button" value="Показать ответ" onclick="Answer(1)"></div>
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p><input type="button" value="Сгенерировать" onclick="Generate(2)"> Задание 7</p></div>
+    <div style='margin-left:60px;'><p>Сколько секунд потребуется модему, передающему информацию со скоростью <span id="2A">A</span> бит/с, чтобы передать <span id="2B">B</span>─цветное растровое изображение размером <span id="2C">C</span> на <span id="2D">D</span> пикселей, при условии что цвет кодируется минимально возможным количеством бит. Ответ округлите до целых.</p></div>
+</font>
+<div style='margin-left:40px;'><input id="2p" type="text" size="30">&nbsp<input type="button" value="Ответить" onclick="CheckAnswer(2)">&nbsp<input type="button" value="Показать ответ" onclick="Answer(2)"></div>
+<script>
+    document.getElementById("login").style = "display:none";
+    document.getElementById("out").style = "display:none";
+    Generate(1);
+    Generate(2)
+</script>
+</body>
+</html>

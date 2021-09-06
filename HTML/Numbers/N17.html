@@ -1,0 +1,64 @@
+<html>
+<head>
+<title id="name">MGV ЕГЕ Упражнения Задание 17</title>
+<link rel="icon" href="img/logo1.png">
+<script type="text/javascript" src="number.js"></script>
+<style>
+.circle {
+    width: 120px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 255, 255);
+    font-size: 30px;
+    color: rgb(4, 1, 22);
+    line-height: 85px;
+    text-align: center;
+    background: rgb(135, 214, 44)
+}
+</style>
+</head>
+<body bgcolor=Honeydew link=Black alink=Orange vlink=Black>
+<table bgcolor=LimeGreen cellpadding=2 width="100%">
+<tr align=left bgcolor=LimeGreen valign=center>
+<td width=7%><img src="img/logo.png" hspace=30 height=120 width=180></td>
+<td width=60%><a href="Informatics"><H2>Информатика</H2></a></td>
+<td width=5%>
+    <div id="login" class="circle">Login</div>  
+</td>
+<td width=5% valign="Top">
+    <br><input id="out" type="button" value="Выход" onclick="OutClick()">
+    <br><br><input id="prof" type="button" value="Профиль" onclick="Profile()">
+</td>
+<td width=10% id="input"><input placeholder="Логин" id="Loginin" type="text" size="20">
+    <br>
+    <input placeholder="Пароль" id="Passwordin" type="password" size="20">
+    <br>
+    <input id="1" type="button" value="Вход" onclick="SendClick()"></td>
+<td width=5%><a href="Registration">Регистрация</a>
+<td width=8%><a href="Top">Топ</a></td>
+</tr>
+</table>
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p>Задание 17/1</p></div>
+    <div style='margin-left:60px;'><p>Рассматривается множество целых чисел, принадлежащих числовому отрезку [4197; 9182], которые делятся на 5 и не делятся на 6, 10, 13, 16. Найдите количество таких чисел и максимальное из них. В ответе запишите два целых числа без пробелов и других дополнительных символов: сначала количество, затем максимальное число.</p>
+        <p>Для выполнения этого задания можно написать программу или воспользоваться редактором электронных таблиц.</p></div>
+</font>
+<div style='margin-left:40px;'><input id="1p" type="text" size="30">&nbsp<input id="1" type="button" value="Ответить" onclick="TestAnswer(1)">&nbsp<input id="1" type="button" value="Показать ответ" onclick="Answer(1)"></div>
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p>Задание 17/2</p></div>
+    <div style='margin-left:60px;'><p>Рассматривается множество целых чисел, принадлежащих числовому отрезку [3521; 13019], которые делятся на 9 и 15 и не делятся на 6, 12, 17, 21. Найдите количество таких чисел и минимальное из них. В ответе запишите два целых числа без пробелов и других дополнительных символов: сначала количество, затем минимальное число.</p>
+        <p>Для выполнения этого задания можно написать программу или воспользоваться редактором электронных таблиц.</p></div>
+</font>
+<div style='margin-left:40px;'><input id="2p" type="text" size="30">&nbsp<input id="2" type="button" value="Ответить" onclick="TestAnswer(2)">&nbsp<input id="2" type="button" value="Показать ответ" onclick="Answer(2)"></div>
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p>Задание 17/3</p></div>
+    <div style='margin-left:60px;'><p>Рассматривается множество целых чисел, принадлежащих числовому отрезку [6391; 8185], которые делятся на 11 или 17 и не делятся на 2, 13, 14, 34. Найдите количество таких чисел и минимальное из них. В ответе запишите два целых числа без пробелов и других дополнительных символов: сначала количество, затем минимальное число.</p>
+        <p>Для выполнения этого задания можно написать программу или воспользоваться редактором электронных таблиц.</p></div>
+</font>
+<div style='margin-left:40px;'><input id="3p" type="text" size="30">&nbsp<input id="3" type="button" value="Ответить" onclick="TestAnswer(3)">&nbsp<input id="3" type="button" value="Показать ответ" onclick="Answer(3)"></div>
+<script>
+    document.getElementById("login").style = "display:none";
+    document.getElementById("out").style = "display:none";
+</script>
+</body>
+</html>

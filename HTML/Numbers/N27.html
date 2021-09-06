@@ -1,0 +1,66 @@
+<html>
+<head>
+<title id="name">MGV ЕГЕ Упражнения Задание 27</title>
+<link rel="icon" href="img/logo1.png">
+<script type="text/javascript" src="number26-7.js"></script>
+<style>
+.circle {
+    width: 120px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 255, 255);
+    font-size: 30px;
+    color: rgb(4, 1, 22);
+    line-height: 85px;
+    text-align: center;
+    background: rgb(135, 214, 44)
+}
+</style>
+</head>
+<body bgcolor=Honeydew link=Black alink=Orange vlink=Black>
+<table bgcolor=LimeGreen cellpadding=2 width="100%">
+<tr align=left bgcolor=LimeGreen valign=center>
+<td width=7%><img src="img/logo.png" hspace=30 height=120 width=180></td>
+<td width=60%><a href="Informatics"><H2>Информатика</H2></a></td>
+<td width=5%>
+    <div id="login" class="circle">Login</div>  
+</td>
+<td width=5% valign="Top">
+    <br><input id="out" type="button" value="Выход" onclick="OutClick()">
+    <br><br><input id="prof" type="button" value="Профиль" onclick="Profile()">
+</td>
+<td width=10% id="input"><input placeholder="Логин" id="Loginin" type="text" size="20">
+    <br>
+    <input placeholder="Пароль" id="Passwordin" type="password" size="20">
+    <br>
+    <input id="1" type="button" value="Вход" onclick="SendClick()"></td>
+<td width=5%><a href="Registration">Регистрация</a>
+<td width=8%><a href="Top">Топ</a></td>
+</tr>
+</table>
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p>Задание 27/1</p></div>
+    <div style='margin-left:60px;'><p>Имеется набор данных, состоящий из пар положительных целых чисел. Необходимо выбрать из каждой пары ровно одно число так, чтобы сумма всех выбранных чисел не делилась на 3 и при этом была минимально возможной. Гарантируется, что искомую сумму получить можно. Программа должна напечатать одно число — минимально возможную сумму, соответствующую условиям задачи.</p></div>
+    <div style='margin-left:60px;'><p>Входные данные.</p></div>
+    <div style='margin-left:80px;'><a href="file27_1" download="27-A.txt">Скачать файл A</a></div>
+    <div style='margin-left:80px;'><a href="file27_2" download="27-B.txt">Скачать файл B</a></div>
+    <div style='margin-left:60px;'><p>Даны два входных файла (файл A и файл B), каждый из которых содержит в первой строке количество пар N (1 ≤ N ≤ 100000). Каждая из следующих N строк содержит два натуральных числа, не превышающих 10 000.</p>
+        <p>Пример организации исходных данных во входном файле:</p>
+        <p>6</p>
+        <p>1 3</p>
+        <p>5 12</p>
+        <p>6 9</p>
+        <p>5 4</p>
+        <p>3 3</p>
+        <p>1 1</p>
+        <p>Для указанных входных данных значением искомой суммы должно быть число 20.</p>
+        <p>В ответе укажите два числа: сначала значение искомой суммы для файла А, затем для файла B.</p>
+        <p>Предупреждение: для обработки файла B не следует использовать переборный алгоритм, вычисляющий сумму для всех возможных вариантов, поскольку написанная по такому алгоритму программа будет выполняться слишком долго.</p></div>
+</font>
+<div style='margin-left:40px;'><input id="1p" type="text" size="10"><input id="2p" type="text" size="10">&nbsp<input id="1" type="button" value="Ответить" onclick="TestAnswer(1)">&nbsp<input id="1" type="button" value="Показать ответ" onclick="Answer(1)"></div>
+<script>
+    document.getElementById("login").style = "display:none";
+    document.getElementById("out").style = "display:none";
+</script>
+</body>
+</html>

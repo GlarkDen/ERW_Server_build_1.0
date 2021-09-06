@@ -1,0 +1,70 @@
+<html>
+<head>
+<title id="name">MGV ЕГЕ Упражнения Задание 4</title>
+<link rel="icon" href="img/logo1.png">
+<script type="text/javascript" src="number.js"></script>
+<style>
+.circle {
+    width: 120px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 255, 255);
+    font-size: 30px;
+    color: rgb(4, 1, 22);
+    line-height: 85px;
+    text-align: center;
+    background: rgb(135, 214, 44)
+}
+</style>
+</head>
+<body bgcolor=Honeydew link=Black alink=Orange vlink=Black>
+<table bgcolor=LimeGreen cellpadding=2 width="100%">
+<tr align=left bgcolor=LimeGreen valign=center>
+<td width=7%><img src="img/logo.png" hspace=30 height=120 width=180></td>
+<td width=60%><a href="Informatics"><H2>Информатика</H2></a></td>
+<td width=5%>
+    <div id="login" class="circle">Login</div>  
+</td>
+<td width=5% valign="Top">
+    <br><input id="out" type="button" value="Выход" onclick="OutClick()">
+    <br><br><input id="prof" type="button" value="Профиль" onclick="Profile()">
+</td>
+<td width=10% id="input"><input placeholder="Логин" id="Loginin" type="text" size="20">
+    <br>
+    <input placeholder="Пароль" id="Passwordin" type="password" size="20">
+    <br>
+    <input id="1" type="button" value="Вход" onclick="SendClick()"></td>
+<td width=5%><a href="Registration">Регистрация</a>
+<td width=8%><a href="Top">Топ</a></td>
+</tr>
+</table>
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p>Задание 4/1</p></div>
+    <div style='margin-left:60px;'><p>Для кодирования букв О, К, Г, Д, Р решили использовать двоичное представление чисел 0, 1, 2, 3 и 4 соответственно (с сохранением одного незначащего нуля в случае одноразрядного представления). Закодируйте последовательность букв ГОРОДОК таким способом и результат запишите восьмеричным кодом.</p></div>
+</font>
+<div style='margin-left:40px;'><input id="1p" type="text" size="30">&nbsp<input id="1" type="button" value="Ответить" onclick="TestAnswer(1)">&nbsp<input id="1" type="button" value="Показать ответ" onclick="Answer(1)"></div>
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p>Задание 4/2</p></div>
+    <div style='margin-left:60px;'><p>По каналу связи передаются сообщения, содержащие только семь букв: А, Б, Г, И, М, Р, Я. Для передачи используется двоичный код, удовлетворяющий условию Фано. Кодовые слова для некоторых букв известны: А — 010, Б — 011, И — 10. Какое наименьшее количество двоичных знаков потребуется для кодирования слова ГРАММ?</p>
+        <p>Примечание. Условие Фано означает, что ни одно кодовое слово не является началом другого кодового слова.</p></div>
+</font>
+<div style='margin-left:40px;'><input id="2p" type="text" size="30">&nbsp<input id="2" type="button" value="Ответить" onclick="TestAnswer(2)">&nbsp<input id="2" type="button" value="Показать ответ" onclick="Answer(2)"></div>
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p>Задание 4/3</p></div>
+    <div style='margin-left:60px;'><p>Для 6 букв латинского алфавита заданы их двоичные коды (для некоторых букв из двух бит, для некоторых – из трех). Эти коды представлены в таблице:</p></div>
+    <div style='margin-left:80px;'><img src='Task4_1'></div>
+    <div style='margin-left:60px;'><p>Какая последовательность из 6 букв закодирована двоичной строкой 011111000101100?</p></div>
+</font>
+<div style='margin-left:40px;'><input id="3p" type="text" size="30">&nbsp<input id="3" type="button" value="Ответить" onclick="TestAnswer(3)">&nbsp<input id="3" type="button" value="Показать ответ" onclick="Answer(3)"></div>
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p>Задание 4/4</p></div>
+    <div style='margin-left:60px;'><p>Для кодирования некоторой последовательности, состоящей из букв И, К, Л, М, Н, решили использовать неравномерный двоичный код, удовлетворяющий условию Фано. Для буквы Н использовали кодовое слово 0, для буквы К – кодовое слово 10. Какова наименьшая возможная суммарная длина всех пяти кодовых слов?</p>
+        <p>Примечание. Условие Фано означает, что никакое кодовое слово не является началом другого кодового слова. Это обеспечивает возможность однозначной расшифровки закодированных сообщений.</p></div>
+</font>
+<div style='margin-left:40px;'><input id="4p" type="text" size="30">&nbsp<input id="4" type="button" value="Ответить" onclick="TestAnswer(4)">&nbsp<input id="4" type="button" value="Показать ответ" onclick="Answer(4)"></div>
+<script>
+    document.getElementById("login").style = "display:none";
+    document.getElementById("out").style = "display:none";
+</script>
+</body>
+</html>

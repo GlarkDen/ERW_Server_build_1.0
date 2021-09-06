@@ -1,0 +1,132 @@
+<html>
+<head>
+<title id="name">MGV ЕГЕ Упражнения Задание 2</title>
+<link rel="icon" href="img/logo1.png">
+<script type="text/javascript" src="base.js"></script>
+<script type="text/javascript" src="Exercise-2.js"></script>
+<style>
+.circle {
+    width: 120px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 255, 255);
+    font-size: 30px;
+    color: rgb(4, 1, 22);
+    line-height: 85px;
+    text-align: center;
+    background: rgb(135, 214, 44)
+}
+</style>
+</head>
+<body bgcolor=Honeydew link=Black alink=Orange vlink=Black>
+<table bgcolor=LimeGreen cellpadding=2 width="100%">
+<tr align=left bgcolor=LimeGreen valign=center>
+<td width=7%><img src="img/logo.png" hspace=30 height=120 width=180></td>
+<td width=60%><a href="Informatics"><H2>Информатика</H2></a></td>
+<td width=5%>
+    <div id="login" class="circle">Login</div>  
+</td>
+<td width=5% valign="Top">
+    <br><input id="out" type="button" value="Выход" onclick="OutClick()">
+    <br><br><input id="prof" type="button" value="Профиль" onclick="Profile()">
+</td>
+<td width=10% id="input"><input placeholder="Логин" id="Loginin" type="text" size="20">
+    <br>
+    <input placeholder="Пароль" id="Passwordin" type="password" size="20">
+    <br>
+    <input type="button" value="Вход" onclick="SendClick()"></td>
+<td width=5%><a href="Registration">Регистрация</a>
+<td width=8%><a href="Top">Топ</a></td>
+</tr>
+</table>
+<center>
+<font face='Times New Roman' size=+2>
+    <p>Упражнение задания 2</p>
+    <p id="level">Уровень: Легко</p>
+</font>
+</center>
+<span id="e1">
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p>Задание 1</p></div>
+    <div style='margin-left:60px;'><p id="1">Напишите наименьшее целое число x, для которого истинно высказывание: <br><br> НЕ (X < 9) И НЕ (X нечётное).</p></div>
+</font>
+</span>
+
+<span id="h1">
+    <font face='Times New Roman' size=+1>
+        <div style='margin-left:40px;'><p>Задание 1</p></div>
+        <div style='margin-left:60px;'><p id="h1_1">Логическая функция F задаётся выражением ((x → y ) ∧ (y → w)) ∨ (z ≡ ( x ∨ y)).<br><br>
+            Дан частично заполненный фрагмент, содержащий неповторяющиеся строки таблицы истинности функции F.<br><br>
+            Определите, какому столбцу таблицы истинности соответствует каждая из переменных x, y, z, w.</p></div>
+        <div style='margin-left:80px;'><img src='' id="h1_i1"></div><br>
+        <div style='margin-left:60px;' id="h1_2"><br>
+            В ответе напишите буквы x, y, z, w в том порядке, в котором идут соответствующие им столбцы (сначала — буква, соответствующая первому столбцу; затем — буква, соответствующая второму столбцу, и т. д.). Буквы в ответе пишите подряд, никаких разделителей между буквами ставить не нужно.<br><br>
+            Пример. Пусть задано выражение x → y, зависящее от двух переменных x и y, и фрагмент таблицы истинности:</div><br>
+            <div style='margin-left:80px;'><img src='' id="h1_i2"></div>
+            <br><div style='margin-left:60px;' id="h1_3">
+            Тогда первому столбцу соответствует переменная y, а второму столбцу соответствует переменная x. В ответе нужно написать: yx.</div><br>
+    </font>
+</span>
+
+<div style='margin-left:40px;'><input id="1p" type="text" size="30">&nbsp<input type="button" value="Ответить" onclick="Answer(1)"></div>
+
+<span id="e2">
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p>Задание 2</p></div>
+    <div style='margin-left:60px;'><p id="2">Напишите наименьшее целое число x, для которого истинно высказывание: <br><br> НЕ (X <= 8) И НЕ (X >= 15) И (X чётное).</p></div>
+</font>
+</span>
+
+<span id="h2">
+    <font face='Times New Roman' size=+1>
+        <div style='margin-left:40px;'><p>Задание 2</p></div>
+        <div style='margin-left:60px;'><p id="h2_1">Логическая функция F задаётся выражением ((x → y ) ∧ (y → w)) ∨ (z ≡ ( x ∨ y)).<br><br>
+            Дан частично заполненный фрагмент, содержащий неповторяющиеся строки таблицы истинности функции F.<br><br>
+            Определите, какому столбцу таблицы истинности соответствует каждая из переменных x, y, z, w.</p></div>
+        <div style='margin-left:80px;'><img src='' id="h2_i1"></div><br>
+        <div style='margin-left:60px;'id="h2_2"><br>
+            В ответе напишите буквы x, y, z, w в том порядке, в котором идут соответствующие им столбцы (сначала — буква, соответствующая первому столбцу; затем — буква, соответствующая второму столбцу, и т. д.). Буквы в ответе пишите подряд, никаких разделителей между буквами ставить не нужно.<br><br>
+            Пример. Пусть задано выражение x → y, зависящее от двух переменных x и y, и фрагмент таблицы истинности:</div><br>
+            <div style='margin-left:80px;'><img src='' id="h2_i2"></div>
+            <br><div style='margin-left:60px;' id="h2_3">
+            Тогда первому столбцу соответствует переменная y, а второму столбцу соответствует переменная x. В ответе нужно написать: yx.</div><br>
+    </font>
+</span>
+
+<div style='margin-left:40px;'><input id="2p" type="text" size="30">&nbsp<input type="button" value="Ответить" onclick="Answer(2)"></div>
+
+<span id="e3">
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p>Задание 3</p></div>
+    <div style='margin-left:60px;'><p id="3">Напишите наименьшее натуральное трёхзначное число, для которого ИСТИННО высказывание: <br><br> НЕ (Число нечётное) И (Число кратно 3).</p></div>
+</font>
+</span>
+
+<span id="h3">
+    <font face='Times New Roman' size=+1>
+        <div style='margin-left:40px;'><p>Задание 3</p></div>
+        <div style='margin-left:60px;'><p id="h3_1">Логическая функция F задаётся выражением ((x → y ) ∧ (y → w)) ∨ (z ≡ ( x ∨ y)).<br><br>
+            Дан частично заполненный фрагмент, содержащий неповторяющиеся строки таблицы истинности функции F.<br><br>
+            Определите, какому столбцу таблицы истинности соответствует каждая из переменных x, y, z, w.</p></div>
+        <div style='margin-left:80px;'><img src='' id="h3_i1"></div><br>
+        <div style='margin-left:60px;' id="h3_2"><br>
+            В ответе напишите буквы x, y, z, w в том порядке, в котором идут соответствующие им столбцы (сначала — буква, соответствующая первому столбцу; затем — буква, соответствующая второму столбцу, и т. д.). Буквы в ответе пишите подряд, никаких разделителей между буквами ставить не нужно.<br><br>
+            Пример. Пусть задано выражение x → y, зависящее от двух переменных x и y, и фрагмент таблицы истинности:</div><br>
+            <div style='margin-left:80px;'><img src='' id="h3_i2"></div>
+            <br><div style='margin-left:60px;' id="h3_3">
+            Тогда первому столбцу соответствует переменная y, а второму столбцу соответствует переменная x. В ответе нужно написать: yx.</div><br>
+    </font>
+</span>
+
+<div style='margin-left:40px;'><input id="3p" type="text" size="30">&nbsp<input type="button" value="Ответить" onclick="Answer(3)"></div>
+
+
+<br><br><br><br><br><br><br>
+
+<script>
+    document.getElementById("login").style = "display:none";
+    document.getElementById("out").style = "display:none";
+    Download();
+</script>
+</body>
+</html>

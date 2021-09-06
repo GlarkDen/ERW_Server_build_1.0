@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>MGV ЕГЕ Топ</title>
+<link rel="icon" href="img/logo1.png">
+<script type="text/javascript" src="top.js"></script>
+<style>
+.circle {
+    width: 120px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 255, 255);
+    font-size: 30px;
+    color: rgb(4, 1, 22);
+    line-height: 85px;
+    text-align: center;
+    background: rgb(135, 214, 44)
+}
+</style>
+</head>
+<body bgcolor=Honeydew link=Black alink=Orange vlink=Black>
+<table bgcolor=LimeGreen cellpadding=2 width="100%">
+<tr align=left bgcolor=LimeGreen valign=center>
+<td width=7%><img src="img/logo.png" hspace=30 height=120 width=180></td>
+<td width=60%><a href="Informatics"><H2>Информатика</H2></a></td>
+<td width=5%>
+    <div id="login" class="circle">Login</div>  
+</td>
+<td width=5% valign="Top">
+    <br><input id="out" type="button" value="Выход" onclick="OutClick()">
+    <br><br><input id="prof" type="button" value="Профиль" onclick="Profile()">
+</td>
+<td width=10% id="input"><input placeholder="Логин" id="Loginin" type="text" size="20">
+    <br>
+    <input placeholder="Пароль" id="Passwordin" type="password" size="20">
+    <br>
+    <input id="1" type="button" value="Вход" onclick="SendClick()"></td>
+<td width=5%><a href="Registration">Регистрация</a>
+<td width=8%><a href="Top">Топ</a></td>
+</tr>
+</table>
+<center>
+    <br>
+    <div style="position: absolute; top: 140; left: 870;">
+    <div  id="l1" class="circle">Login</div>
+    <b style="border: 3px solid #ffef0a; background-color: #F0FFF0; padding: 10px;">1 место:</b><p id="lt1">заданий; % верно.</p>
+    <br></div>
+    <div style="position: absolute; top: 200; left: 700;">
+    <div id="l2" class="circle">Login</div>
+    <b style="border: 3px solid #79cff1; background-color: #F0FFF0; padding: 10px;">2 место:</b><p id="lt2">заданий; % верно.</p>
+    <br></div>
+    <div style="position: absolute; top: 230; left: 1030;">
+    <div id="l3" class="circle">Login</div>
+    <b style="border: 3px solid #ca6f06; background-color: #F0FFF0; padding: 10px;">3 место:</b><p id="lt3">заданий; % верно.</p>
+    <br></div>
+    <div style="position: absolute; top: 400; left: 500;">
+    <div id="l4" class="circle">Login</div>
+    <b style="border: 3px solid #21700d; background-color: #F0FFF0; padding: 10px;">4 место:</b><p id="lt4">заданий; % верно.</p>
+    <br></div>
+    <div style="position: absolute; top: 450; left: 1200;">
+    <div id="l5" class="circle">Login</div>
+    <b style="border: 3px solid #21700d; background-color: #F0FFF0; padding: 10px;">5 место:</b><p id="lt5">заданий; % верно.</p>
+    <br></div>
+    <div style="position: absolute; top: 500; left: 330;">
+    <div id="l6" class="circle">Login</div>
+    <b style="border: 3px solid #21700d; background-color: #F0FFF0; padding: 10px;">6 место:</b><p id="lt6">заданий; % верно.</p>
+    <br></div>
+    <div style="position: absolute; top: 550; left: 1370;">
+    <div id="l7" class="circle">Login</div>
+    <b style="border: 3px solid #21700d; background-color: #F0FFF0; padding: 10px;">7 место:</b><p id="lt7">заданий; % верно.</p>
+    <br></div>
+    <div style="position: absolute; top: 600; left: 160;">
+    <div id="l8" class="circle">Login</div>
+    <b style="border: 3px solid #21700d; background-color: #F0FFF0; padding: 10px;">8 место:</b><p id="lt8">заданий; % верно.</p>
+    <br></div>
+    <div style="position: absolute; top: 650; left: 1540;">
+    <div id="l9" class="circle">Login</div>
+    <b style="border: 3px solid #21700d; background-color: #F0FFF0; padding: 10px;">9 место:</b><p id="lt9">заданий; % верно.</p>
+    <br></div>
+    <div style="position: absolute; top: 750; left: 870;">
+    <div id="l10" class="circle">Login</div>
+    <b style="border: 3px solid #21700d; background-color: #F0FFF0; padding: 10px;">10 место:</b><p id="lt10">заданий; % верно.</p>
+    <br><br><br></div>
+</center>
+<script>
+    document.getElementById("login").style = "display:none";
+    document.getElementById("out").style = "display:none";
+</script>
+</body>
+</html>

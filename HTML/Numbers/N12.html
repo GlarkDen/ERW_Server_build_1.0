@@ -1,0 +1,78 @@
+<html>
+<head>
+<title id="name">MGV ЕГЕ Упражнения Задание 12</title>
+<link rel="icon" href="img/logo1.png">
+<script type="text/javascript" src="number.js"></script>
+<style>
+.circle {
+    width: 120px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 255, 255);
+    font-size: 30px;
+    color: rgb(4, 1, 22);
+    line-height: 85px;
+    text-align: center;
+    background: rgb(135, 214, 44)
+}
+</style>
+</head>
+<body bgcolor=Honeydew link=Black alink=Orange vlink=Black>
+<table bgcolor=LimeGreen cellpadding=2 width="100%">
+<tr align=left bgcolor=LimeGreen valign=center>
+<td width=7%><img src="img/logo.png" hspace=30 height=120 width=180></td>
+<td width=60%><a href="Informatics"><H2>Информатика</H2></a></td>
+<td width=5%>
+    <div id="login" class="circle">Login</div>  
+</td>
+<td width=5% valign="Top">
+    <br><input id="out" type="button" value="Выход" onclick="OutClick()">
+    <br><br><input id="prof" type="button" value="Профиль" onclick="Profile()">
+</td>
+<td width=10% id="input"><input placeholder="Логин" id="Loginin" type="text" size="20">
+    <br>
+    <input placeholder="Пароль" id="Passwordin" type="password" size="20">
+    <br>
+    <input id="1" type="button" value="Вход" onclick="SendClick()"></td>
+<td width=5%><a href="Registration">Регистрация</a>
+<td width=8%><a href="Top">Топ</a></td>
+</tr>
+</table>
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p>Задание 12/1</p></div>
+    <div style='margin-left:60px;'><p>Исполнитель Редактор получает на вход строку цифр и преобразовывает её. Редактор может выполнять две команды, в обеих командах v и w обозначают цепочки цифр.</p>
+        <p>А) заменить (v, w).</p>
+        <p>Эта команда заменяет в строке первое слева вхождение цепочки v на цепочку w. Например, выполнение команды</p>
+        <p>заменить (555, 63)</p>
+        <p>преобразует строку 12555550 в строку 1263550.</p>
+        <p>Если в строке нет вхождений цепочки v, то выполнение команды заменить (v, w) не меняет эту строку.</p>
+        <p>Б) нашлось (v).</p>
+        <p>Эта команда проверяет, встречается ли цепочка v в строке исполнителя Редактор. Если она встречается, то команда возвращает логическое значение «истина», в противном случае возвращает значение «ложь». Строка исполнителя при этом не изменяется.</p>
+        <p>Цикл</p>
+            <p>ПОКА условие</p>
+                <p>последовательность команд</p>
+                    <p>КОНЕЦ ПОКА</p>
+                        <p>выполняется, пока условие истинно.</p>
+                            <p>В конструкции</p>
+                                <p>ЕСЛИ условие</p>
+                                    <p>ТО команда1</p>
+                                        <p>ИНАЧЕ команда2</p>
+                                            <p>КОНЕЦ ЕСЛИ</p>
+                                                <p>выполняется команда1 (если условие истинно) или команда2 (если условие ложно).</p>
+                                                    <p>Какая строка получится в результате применения приведённой ниже программы к строке, состоящей из 1000 идущих подряд цифр 9? В ответе запишите полученную строку.</p>
+                                                        <p>НАЧАЛО</p>
+                                                            <p>ПОКА нашлось (999) ИЛИ нашлось (888)</p>
+                                                                <p>ЕСЛИ нашлось (888)</p>
+                                                                    <p>ТО заменить (888, 9)</p>
+                                                                        <p>ИНАЧЕ заменить (999, 8)</p>
+                                                                            <p>КОНЕЦ ЕСЛИ</p>
+                                                                                <p>КОНЕЦ ПОКА</p>
+                                                                                    <p>КОНЕЦ</p></div>
+</font>
+<div style='margin-left:40px;'><input id="1p" type="text" size="30">&nbsp<input id="1" type="button" value="Ответить" onclick="TestAnswer(1)">&nbsp<input id="1" type="button" value="Показать ответ" onclick="Answer(1)"></div>
+<script>
+    document.getElementById("login").style = "display:none";
+    document.getElementById("out").style = "display:none";
+</script>
+</body>
+</html>

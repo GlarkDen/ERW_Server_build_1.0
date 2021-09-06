@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>MGV ЕГЕ Профиль</title>
+<link rel="icon" href="img/logo1.png">
+<script type="text/javascript" src="profile.js"></script>
+<style>
+.circle {
+    width: 120px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 255, 255);
+    font-size: 30px;
+    color: rgb(4, 1, 22);
+    line-height: 85px;
+    text-align: center;
+    background: rgb(135, 214, 44)
+}
+</style>
+</head>
+<body bgcolor=Honeydew link=Black alink=Orange vlink=Black>
+<table bgcolor=LimeGreen cellpadding=2 width="100%">
+<tr align=left bgcolor=LimeGreen valign=center>
+<td width=7%><img src="img/logo.png" hspace=30 height=120 width=180></td>
+<td width=60%><a href="Informatics"><H2>Информатика</H2></a></td>
+<td width=5%>
+    <div id="login" class="circle">Login</div>  
+</td>
+<td width=5% valign="Top">
+    <br><input id="out" type="button" value="Выход" onclick="OutClick()">
+</td>
+<td width=10% id="input"><input placeholder="Логин" id="Loginin" type="text" size="20">
+    <br>
+    <input placeholder="Пароль" id="Passwordin" type="password" size="20">
+    <br>
+    <input id="1" type="button" value="Вход" onclick="SendClick()"></td>
+<td width=5%><a href="Registration">Регистрация</a>
+<td width=8%><a href="Top">Топ</a></td>
+</tr>
+</table>
+<br><br><br><br><br>
+<center>
+<div id="loginCenter" class="circle">Login</div>
+<p><input placeholder="Введите старый пароль" id="1p" type="text" size="30"> <input placeholder="Введите новый пароль" id="2p" type="text" size="30"> <input type="button" value="Сменить пароль" onclick="ResetPassword()"></p>
+<font face='Times New Roman' size=+1>
+<p id="Top">Ваше место в топе:</p>
+<p>Статистика по заданиям:</p>
+<p><span id="1t">Задание 1: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="1ts" type="button" value="Сбросить" onclick="Reset(1)"></p>
+<p><span id="2t">Задание 2: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="2ts" type="button" value="Сбросить" onclick="Reset(2)"></p>
+<p><span id="3t">Задание 3: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="3ts" type="button" value="Сбросить" onclick="Reset(3)"></p>
+<p><span id="4t">Задание 4: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="4ts" type="button" value="Сбросить" onclick="Reset(4)"></p>
+<p><span id="5t">Задание 5: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="5ts" type="button" value="Сбросить" onclick="Reset(5)"></p>
+<p><span id="6t">Задание 6: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="6ts" type="button" value="Сбросить" onclick="Reset(6)"></p>
+<p><span id="7t">Задание 7: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="7ts" type="button" value="Сбросить" onclick="Reset(7)"></p>
+<p><span id="8t">Задание 8: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="8ts" type="button" value="Сбросить" onclick="Reset(8)"></p>
+<p><span id="9t">Задание 9: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="9ts" type="button" value="Сбросить" onclick="Reset(9)"></p>
+<p><span id="10t">Задание 10: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="10ts" type="button" value="Сбросить" onclick="Reset(10)"></p>
+<p><span id="11t">Задание 11: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="11ts" type="button" value="Сбросить" onclick="Reset(11)"></p>
+<p><span id="12t">Задание 12: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="12ts" type="button" value="Сбросить" onclick="Reset(12)"></p>
+<p><span id="13t">Задание 13: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="13ts" type="button" value="Сбросить" onclick="Reset(13)"></p>
+<p><span id="14t">Задание 14: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="14ts" type="button" value="Сбросить" onclick="Reset(14)"></p>
+<p><span id="15t">Задание 15: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="15ts" type="button" value="Сбросить" onclick="Reset(15)"></p>
+<p><span id="16t">Задание 16: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="16ts" type="button" value="Сбросить" onclick="Reset(16)"></p>
+<p><span id="17t">Задание 17: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="17ts" type="button" value="Сбросить" onclick="Reset(17)"></p>
+<p><span id="18t">Задание 18: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="18ts" type="button" value="Сбросить" onclick="Reset(18)"></p>
+<p><span id="19t">Задание 19: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="19ts" type="button" value="Сбросить" onclick="Reset(19)"></p>
+<p><span id="20t">Задание 20: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="20ts" type="button" value="Сбросить" onclick="Reset(20)"></p>
+<p><span id="21t">Задание 21: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="21ts" type="button" value="Сбросить" onclick="Reset(21)"></p>
+<p><span id="22t">Задание 22: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="22ts" type="button" value="Сбросить" onclick="Reset(22)"></p>
+<p><span id="23t">Задание 23: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="23ts" type="button" value="Сбросить" onclick="Reset(23)"></p>
+<p><span id="24t">Задание 24: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="24ts" type="button" value="Сбросить" onclick="Reset(24)"></p>
+<p><span id="25t">Задание 25: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="25ts" type="button" value="Сбросить" onclick="Reset(25)"></p>
+<p><span id="26t">Задание 26: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="26ts" type="button" value="Сбросить" onclick="Reset(26)"></p>
+<p><span id="27t">Задание 27: Правильно: ; Неправильно ; Всего решено: ; Процент правильного выполнения: .</span>&nbsp;<input text id="27ts" type="button" value="Сбросить" onclick="Reset(27)"></p>
+</font>
+<br><br><br><br><br>
+</center>
+<script>
+    document.getElementById("login").style = "display:none";
+    document.getElementById("out").style = "display:none";
+</script>
+</body>
+</html>

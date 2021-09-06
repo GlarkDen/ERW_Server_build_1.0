@@ -1,0 +1,60 @@
+<html>
+<head>
+<title id="name">MGV ЕГЕ Упражнения Задание 2</title>
+<link rel="icon" href="img/logo1.png">
+<script type="text/javascript" src="number.js"></script>
+<style>
+.circle {
+    width: 120px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 255, 255);
+    font-size: 30px;
+    color: rgb(4, 1, 22);
+    line-height: 85px;
+    text-align: center;
+    background: rgb(135, 214, 44)
+}
+</style>
+</head>
+<body bgcolor=Honeydew link=Black alink=Orange vlink=Black>
+<table bgcolor=LimeGreen cellpadding=2 width="100%">
+<tr align=left bgcolor=LimeGreen valign=center>
+<td width=7%><img src="img/logo.png" hspace=30 height=120 width=180></td>
+<td width=60%><a href="Informatics"><H2>Информатика</H2></a></td>
+<td width=5%>
+    <div id="login" class="circle">Login</div>  
+</td>
+<td width=5% valign="Top">
+    <br><input id="out" type="button" value="Выход" onclick="OutClick()">
+    <br><br><input id="prof" type="button" value="Профиль" onclick="Profile()">
+</td>
+<td width=10% id="input"><input placeholder="Логин" id="Loginin" type="text" size="20">
+    <br>
+    <input placeholder="Пароль" id="Passwordin" type="password" size="20">
+    <br>
+    <input id="1" type="button" value="Вход" onclick="SendClick()"></td>
+<td width=5%><a href="Registration">Регистрация</a>
+<td width=8%><a href="Top">Топ</a></td>
+</tr>
+</table>
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p>Задание 2/1</p></div>
+    <div style='margin-left:60px;'><p>Логическая функция F задаётся выражением (x ∧ ¬y) ∨ (y ≡ z ) ∨ w.</p>
+        <p>Дан частично заполненный фрагмент, содержащий неповторяющиеся строки таблицы истинности функции F.</p>
+        <p>Определите, какому столбцу таблицы истинности соответствует каждая из переменных x, y, z, w.</p></div>
+    <div style='margin-left:80px;'><img src='Task2_1'></div>
+    <div style='margin-left:60px;'>
+        <p>В ответе напишите буквы x, y, z, w в том порядке, в котором идут соответствующие им столбцы (сначала — буква, соответствующая первому столбцу; затем — буква, соответствующая второму столбцу, и т. д.). Буквы в ответе пишите подряд, никаких разделителей между буквами ставить не нужно.</p>
+        <p>Пример. Пусть задано выражение x → y, зависящее от двух переменных x и y, и фрагмент таблицы истинности:</p></div>
+        <div style='margin-left:80px;'><img src='Task2_2'></div>
+    <div style='margin-left:60px;'>
+        <p>Тогда первому столбцу соответствует переменная y, а второму столбцу соответствует переменная x. В ответе нужно написать: yx.</p></div>
+</font>
+<div style='margin-left:40px;'><input id="1p" type="text" size="30">&nbsp<input id="1" type="button" value="Ответить" onclick="TestAnswer(1)">&nbsp<input id="1" type="button" value="Показать ответ" onclick="Answer(1)"></div>
+<script>
+    document.getElementById("login").style = "display:none";
+    document.getElementById("out").style = "display:none";
+</script>
+</body>
+</html>

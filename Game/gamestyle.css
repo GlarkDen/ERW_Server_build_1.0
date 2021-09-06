@@ -1,0 +1,128 @@
+#background {
+    position: absolute;
+    top: 0;
+    left: 500;
+    z-index: 0;
+}
+.newObject {
+    position: absolute;
+    z-index: 2;
+}
+#newObjectDebug {
+    position: absolute;
+    z-index: 1;
+}
+#controlPanel {
+    top: 850;
+    left: 515;
+    z-index: 3;
+}
+#Relay {
+    top: 850;
+    left: 615;
+    z-index: 3;
+}
+#Power {
+    top: 850;
+    left: 715;
+    z-index: 3;
+}
+#panelOpen {
+    position: absolute;
+    z-index: 4;
+}
+#verticalWire {
+    top: 850;
+    left: 815;
+    z-index: 3;
+}
+#Or {
+    top: 850;
+    left: 915;
+    z-index: 3;
+}
+#Xor {
+    top: 850;
+    left: 1015;
+    z-index: 3;
+}
+#Not {
+    top: 850;
+    left: 1115;
+    z-index: 3;
+}
+#And {
+    top: 850;
+    left: 1215;
+    z-index: 3;
+}
+#start {
+    position: absolute;
+    top: 860;
+    left: 70;
+    z-index: 3;
+}
+#FastBuildingInfo {
+    position: absolute;
+    top: 125;
+    left: 20;
+    z-index: 3;
+}
+#status {
+    position: absolute;
+    top: 845;
+    left: 280;
+    z-index: 3;
+}
+#Question {
+    position: absolute;
+    top: 10;
+    left: 15;
+    z-index: 3;
+}
+#Answer {
+    position: absolute;
+    top: 875;
+    left: 1395;
+    z-index: 3;
+}
+#AnswerImage {
+    position: absolute;
+    top: 0;
+    left: 496;
+    z-index: 5;
+}
+#Plate {
+    position: absolute;
+    top: 150;
+    left: 550;
+    z-index: 4;
+}
+#GoAway {
+    position: absolute;
+    top: 877;
+    left: 1650;
+    z-index: 3;
+}
+#HowPlay {
+    position: absolute;
+    top: 15;
+    left: 1320;
+    z-index: 3;
+}
+#HelloText {
+    position: absolute;
+    top: 163;
+    left: 580;
+    z-index: 5;
+}
+.imageText {
+    position: relative;
+    top: -102;
+    left: 37;
+    z-index: 4;
+}
+.imageButton {
+    position: absolute;
+    z-index: 0;
+}

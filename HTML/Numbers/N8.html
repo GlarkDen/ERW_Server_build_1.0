@@ -1,0 +1,89 @@
+<html>
+<head>
+<title id="name">MGV ЕГЕ Упражнения Задание 8</title>
+<link rel="icon" href="img/logo1.png">
+<script type="text/javascript" src="number.js"></script>
+<style>
+.circle {
+    width: 120px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 255, 255);
+    font-size: 30px;
+    color: rgb(4, 1, 22);
+    line-height: 85px;
+    text-align: center;
+    background: rgb(135, 214, 44)
+}
+</style>
+</head>
+<body bgcolor=Honeydew link=Black alink=Orange vlink=Black>
+<table bgcolor=LimeGreen cellpadding=2 width="100%">
+<tr align=left bgcolor=LimeGreen valign=center>
+<td width=7%><img src="img/logo.png" hspace=30 height=120 width=180></td>
+<td width=60%><a href="Informatics"><H2>Информатика</H2></a></td>
+<td width=5%>
+    <div id="login" class="circle">Login</div>  
+</td>
+<td width=5% valign="Top">
+    <br><input id="out" type="button" value="Выход" onclick="OutClick()">
+    <br><br><input id="prof" type="button" value="Профиль" onclick="Profile()">
+</td>
+<td width=10% id="input"><input placeholder="Логин" id="Loginin" type="text" size="20">
+    <br>
+    <input placeholder="Пароль" id="Passwordin" type="password" size="20">
+    <br>
+    <input id="1" type="button" value="Вход" onclick="SendClick()"></td>
+<td width=5%><a href="Registration">Регистрация</a>
+<td width=8%><a href="Top">Топ</a></td>
+</tr>
+</table>
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p>Задание 8/1</p></div>
+    <div style='margin-left:60px;'><p>Некоторый алфавит содержит три различные буквы. Сколько четырёхбуквенных слов можно составить из букв данного алфавита (буквы в слове могут повторяться)?</p></div>
+</font>
+<div style='margin-left:40px;'><input id="1p" type="text" size="30">&nbsp<input id="1" type="button" value="Ответить" onclick="TestAnswer(1)">&nbsp<input id="1" type="button" value="Показать ответ" onclick="Answer(1)"></div>
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p>Задание 8/2</p></div>
+    <div style='margin-left:60px;'><p>Сколько слов длины 5, начинающихся с согласной буквы и заканчивающихся гласной буквой, можно составить из букв З, И, М, А? Каждая буква может входить в слово несколько раз. Слова не обязательно должны быть осмысленными словами русского языка.</p></div>
+</font>
+<div style='margin-left:40px;'><input id="2p" type="text" size="30">&nbsp<input id="2" type="button" value="Ответить" onclick="TestAnswer(2)">&nbsp<input id="2" type="button" value="Показать ответ" onclick="Answer(2)"></div>
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p>Задание 8/3</p></div>
+    <div style='margin-left:60px;'><p>На световой панели в ряд расположены 7 лампочек. Каждая из первых двух лампочек может гореть красным, жёлтым или зелёным цветом. Каждая из остальных пяти лампочек может гореть одним из двух цветов - красным или белым. Сколько различных сигналов можно передать с помощью панели (все лампочки должны гореть, порядок цветов имеет значение)?</p></div>
+</font>
+<div style='margin-left:40px;'><input id="3p" type="text" size="30">&nbsp<input id="3" type="button" value="Ответить" onclick="TestAnswer(3)">&nbsp<input id="3" type="button" value="Показать ответ" onclick="Answer(3)"></div>
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p>Задание 8/4</p></div>
+    <div style='margin-left:60px;'><p>Для передачи аварийных сигналов договорились использовать специальные цветные сигнальные ракеты, запускаемые последовательно. Одна последовательность ракет — один сигнал; в каком порядке идут цвета — существенно. Какое количество различных сигналов можно передать при помощи запуска ровно трёх таких сигнальных ракет, если в запасе имеются ракеты пяти различных цветов (ракет каждого вида неограниченное количество, цвет ракет в последовательности может повторяться)?</p></div>
+</font>
+<div style='margin-left:40px;'><input id="4p" type="text" size="30">&nbsp<input id="4" type="button" value="Ответить" onclick="TestAnswer(4)">&nbsp<input id="4" type="button" value="Показать ответ" onclick="Answer(4)"></div>
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p>Задание 8/5</p></div>
+    <div style='margin-left:60px;'><p>В корзине лежат 8 черных шаров и 24 белых. Сколько бит информации несет сообщение о том, что достали черный шар?</p></div>
+</font>
+<div style='margin-left:40px;'><input id="5p" type="text" size="30">&nbsp<input id="5" type="button" value="Ответить" onclick="TestAnswer(5)">&nbsp<input id="5" type="button" value="Показать ответ" onclick="Answer(5)"></div>
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p>Задание 8/6</p></div>
+    <div style='margin-left:60px;'><p>Азбука морзе позволяет кодировать символы для сообщений по радиосвязи, задавая комбинацию точек и тире. Сколько различных символов (цифр, букв, знаков пунктуации и т.д.) можно закодировать, используя код азбуки Морзе длиной не менее трёх и не более 5 сигналов (точек и тире)?</p></div>
+</font>
+<div style='margin-left:40px;'><input id="6p" type="text" size="30">&nbsp<input id="6" type="button" value="Ответить" onclick="TestAnswer(6)">&nbsp<input id="6" type="button" value="Показать ответ" onclick="Answer(6)"></div>
+<font face='Times New Roman' size=+1>
+    <div style='margin-left:40px;'><p>Задание 8/7</p></div>
+    <div style='margin-left:60px;'><p>Все 5-буквенные слова, составленные из букв А, Н, П, записаны в алфавитном порядке.</p>
+        <p>Вот начало списка:</p>
+        <p>1. ААААА</p>
+        <p>2. ААААН</p>
+        <p>3. ААААП</p>
+        <p>4. АААНА</p>
+        <p>5. АААНН</p>
+        <p>……</p>
+        <p>Запишите слово, которое стоит на 201-м месте от начала списка.</p></div>
+</font>
+<div style='margin-left:40px;'><input id="7p" type="text" size="30">&nbsp<input id="7" type="button" value="Ответить" onclick="TestAnswer(7)">&nbsp<input id="7" type="button" value="Показать ответ" onclick="Answer(7)"></div>
+<script>
+    document.getElementById("login").style = "display:none";
+    document.getElementById("out").style = "display:none";
+</script>
+</body>
+</html>
